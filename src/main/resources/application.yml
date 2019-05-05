@@ -1,0 +1,20 @@
+server:
+  port: 8421
+  context-path: /CEduViedo
+  jsp-servlet:
+    init-parameters:
+      development: true
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://www.shuaicodeyun.work:3306/cmm?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: "@LiShuai123"
+  mvc:
+    view:
+      suffix: .jsp
+      prefix: /
+mybatis:
+  type-aliases-package: com.aynu.entity
+  mapper-locations: classpath:com/aynu/mapper/*Mapper.xml
